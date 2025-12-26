@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assistente da Lanchonete Shalom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="app-container">
+      <header class="app-header">
+        <div class="brand">
+          <img src="logo_lanchonete.png" alt="Lanchonete Shalom" class="logo-img" />
+          <div class="header-text">
+            <span class="badge">Setores Produtivos</span>
+            <h1>Assistente da Lanchonete</h1>
+            <p>Insights para a gestão das Lanchonetes Shalom, em comunhão com o PEV e o carisma.</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="chat-wrapper">
+        <section class="chat-container">
+          <div id="chat" class="chat-messages"></div>
+
+          <div class="quick-actions">
+            <button class="quick-btn" data-template="Faça um diagnóstico rápido da realidade da lanchonete. Vou descrever os principais pontos e quero que você me diga perigos, oportunidades e próximos passos.">
+              Diagnóstico rápido
+            </button>
+            <button class="quick-btn" data-template="Sugira ações práticas para aumentar o faturamento e o ticket médio da lanchonete nos próximos 3 meses, respeitando o PEV e as orientações da missão.">
+              Aumentar ticket médio
+            </button>
+            <button class="quick-btn" data-template="Quais pontos devo acompanhar mensalmente na lanchonete (fluxo de caixa, desperdício, escala, qualidade, evangelização)?">
+              Pontos de acompanhamento
+            </button>
+          </div>
+
+          <form id="chat-form" class="chat-form">
+            <textarea
+              id="message-input"
+              class="chat-input"
+              rows="2"
+              placeholder="Descreva a realidade da sua lanchonete ou faça uma pergunta (vendas, ticket médio, desperdício, escala, cardápio, PEV, etc.)..."
+              required
+            ></textarea>
+            <button type="submit" class="send-btn">Enviar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <span>Assistente da Lanchonete · Comunidade Católica Shalom</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
